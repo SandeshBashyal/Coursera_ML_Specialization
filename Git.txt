@@ -1,0 +1,36 @@
+git help
+git config --global user.name "SandeshBashyal"
+git config --global user.email "sandeshbashyal01@gmail.com"
+git config --global user.email
+git config --global user.name
+whoami
+pwd
+ls
+ls -l
+mkdir Python
+cd Python
+(dm -r Python)
+git status
+
+<------------------------------------------------>
+Getting Projects:
+git clone https://github.com/SandeshBashyal/Python.git
+
+<------------------------------------------------>
+git init //master branch 
+ls
+ls -a
+touch initial.txt
+git add initial.txt
+git status
+git commit -m "first commit"
+git remote add origin https://github.com/SandeshBashyal/Python.git
+git remote set-url origin https://github.com/SandeshBashyal/Python.git
+git remote -v
+git push -u origin master
+
+<---------------------------------------------------->
+git branch ________
+git checkout ________
+git branch
+git checkout 854f3d566d706427d4c8b1f81cd5baa69d01f1c4 //(commit)
