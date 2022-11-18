@@ -12,8 +12,7 @@ cd Python
 (dm -r Python)
 git status
 
-<------------------------------------------------>
-Getting Projects:
+<------------------------------------------------>Getting Projects:
 git clone https://github.com/SandeshBashyal/Python.git
 
 <------------------------------------------------>
@@ -27,10 +26,24 @@ git commit -m "first commit"
 git remote add origin https://github.com/SandeshBashyal/Python.git
 git remote set-url origin https://github.com/SandeshBashyal/Python.git
 git remote -v
-git push -u origin master
+git push -u origin main(branch name)
 
-<---------------------------------------------------->
-git branch ________
-git checkout ________
+git remote add origin Vs git remote set-url origin
+git restore .
+
+<---------------------------------------------------->Creating branch and moving in branch
+git branch ________1
+git checkout ________1
 git branch
 git checkout 854f3d566d706427d4c8b1f81cd5baa69d01f1c4 //(commit)
+
+<----------------------------------------------------->Delete Branch
+git branch -d _________2
+git push origin --delete _________2.
+
+
+
+
+
+For this problem ------>>   fatal: detected dubious ownership in repository at 'D:/Coding/Python'
+Solution -------------->>   git config --global --add safe.directory D:/Coding/Python
