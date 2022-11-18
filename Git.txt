@@ -12,6 +12,27 @@ cd Python
 (dm -r Python)
 git status
 
+
+GUIDE FROM GITHUB DURING CREATING REPOSITORY
+
+1.
+…or create a new repository on the command line
+echo "# Certificates" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/SandeshBashyal/Certificates.git
+git push -u origin main
+
+
+2.
+git remote add origin https://github.com/SandeshBashyal/Certificates.git
+git branch -M main
+git push -u origin main
+
+
+
 <------------------------------------------------>Getting Projects:
 git clone https://github.com/SandeshBashyal/Python.git
 
@@ -40,10 +61,6 @@ git checkout 854f3d566d706427d4c8b1f81cd5baa69d01f1c4 //(commit)
 <----------------------------------------------------->Delete Branch
 git branch -d _________2
 git push origin --delete _________2.
-
-
-
-
 
 For this problem ------>>   fatal: detected dubious ownership in repository at 'D:/Coding/Python'
 Solution -------------->>   git config --global --add safe.directory D:/Coding/Python
