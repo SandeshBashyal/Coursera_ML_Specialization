@@ -1,0 +1,14 @@
+Here are the steps to run the django project
+
+A. Install Django
+# Install python from website, I have pyenv for different python versions
+# Go to the terminal and install virtualenv, but before you need to install pip if not installed while installing python
+-> pip install --upgrade pip
+-> pip install virtualenv
+-> python -m venv _________(name of the project, here in my case it is virenv as vir(tual)env(ironment))
+-> virenv\Scripts\activate
+# so create your your virtualenv, you can see it in .gitignore. To create a file .gitignore:
+-> Install git bash
+-> In git bash, touch .gitignore
+-> write the folders and file name in .gitignore that you don't want to push in github.
+# let's create django app and we will push it in github.
