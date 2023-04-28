@@ -38,10 +38,12 @@ git clone https://github.com/SandeshBashyal/Python.git
 
 <------------------------------------------------>
 git init //master branch 
+
 ls
 ls -a
 touch initial.txt
 git add initial.txt
+git add .      * git reset
 git status
 git commit -m "first commit"
 git remote add origin https://github.com/SandeshBashyal/Python.git
