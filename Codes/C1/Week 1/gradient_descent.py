@@ -1,4 +1,4 @@
-import math, copy
+import math
 import numpy as np
 import matplotlib.pyplot as plt
 plt.style.use('./deeplearning.mplstyle')
@@ -37,6 +37,7 @@ def compute_gradient(x, y, w, b):
     dj_db = 0
     
     for i in range(m):  
+        #simultaneous update
         f_wb = w * x[i] + b 
         dj_dw_i = (f_wb - y[i]) * x[i] 
         dj_db_i = f_wb - y[i] 
