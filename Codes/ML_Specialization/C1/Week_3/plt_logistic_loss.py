@@ -98,7 +98,7 @@ def plt_logistic_cost(X,y):
 def soup_bowl():
     """ creates 3D quadratic error surface """
     #Create figure and plot with a 3D projection
-    fig = plt.figure(figsize=(4,4))
+    fig = plt.figure(figsize=(6,6))
     fig.canvas.toolbar_visible = False
     fig.canvas.header_visible = False
     fig.canvas.footer_visible = False

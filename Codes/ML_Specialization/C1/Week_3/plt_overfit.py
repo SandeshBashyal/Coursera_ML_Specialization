@@ -3,7 +3,7 @@ plot_overfit
     class and assocaited routines that plot an interactive example of overfitting and its solutions
 """
 import math
-from ipywidgets import Output
+# from ipywidgets import Output
 from matplotlib.gridspec import GridSpec
 from matplotlib.widgets import Button, CheckButtons
 from sklearn.linear_model import LogisticRegression, Ridge
@@ -114,7 +114,7 @@ def plot_decision_boundary_sklearn(x0r, x1r, predict, degree,  scaler = False):
 # then, in a cell where the error messages will be the output of..
 #display(output)
 
-output = Output() # sends hidden error messages to display when using widgets
+# output = Output() # sends hidden error messages to display when using widgets
 
 class button_manager:
     ''' Handles some missing features of matplotlib check buttons
@@ -125,7 +125,7 @@ class button_manager:
         maintains single button on state, calls call_on_click
     '''
 
-    @output.capture()  # debug
+    # @output.capture()  # debug
     def __init__(self,fig, dim, labels, init, call_on_click):
         '''
         dim: (list)     [leftbottom_x,bottom_y,width,height]
@@ -141,12 +141,12 @@ class button_manager:
         self.status = self.button.get_status()
         self.call_on_click(self.status.index(True),firsttime=True)
 
-    @output.capture()  # debug
+    # @output.capture()  # debug
     def reinit(self):
         self.status = self.init_state
         self.button.set_active(self.status.index(True))      #turn off old, will trigger update and set to status
 
-    @output.capture()  # debug
+    # @output.capture()  # debug
     def button_click(self, event):
         ''' maintains one-on state. If on-button is clicked, will process correctly '''
         #new_status = self.button.get_status()
@@ -223,7 +223,7 @@ class overfit_example():
         if not firsttime:
             self.degrbut.reinit()
 
-    @output.capture()  # debug
+    # @output.capture()  # debug
     def logistic_data(self,redraw=False):
         if not redraw:
             m = 50
@@ -275,14 +275,14 @@ class overfit_example():
             self.ylim = self.ax[0].get_ylim()
 
 
-    @output.capture()  # debug
+    # @output.capture()  # debug
     def add_data(self, event):
         if self.logistic:
             self.add_data_logistic(event)
         else:
             self.add_data_linear(event)
 
-    @output.capture()  # debug
+    # @output.capture()  # debug
     def add_data_logistic(self, event):
         if event.inaxes == self.ax[0]:
             x0_coord = event.xdata
@@ -317,7 +317,7 @@ class overfit_example():
     #        self.linear_regression()
 
 
-    @output.capture()  # debug
+    # @output.capture()  # debug
     def fitdata_clicked(self,event):
         if self.logistic:
             self.logistic_regression()
@@ -371,7 +371,7 @@ class overfit_example():
                        scaler=True, mu=self.X_mu, sigma=self.X_sigma, degree=self.degree )
         self.fig.canvas.draw()
 
-    @output.capture()  # debug
+    # @output.capture()  # debug
     def update_equation(self, idx, firsttime=False):
         #print(f"Update equation, index = {idx}, firsttime={firsttime}")
         self.degree = idx+1
