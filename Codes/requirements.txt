@@ -1,1 +1,1 @@
-pip install pandas, matplotlib, seaborn, jupyter, scikit-learn
+pip install pandas matplotlib seaborn scikit-learn pydot tensorflow graphviz jupyter xgboost
