@@ -66,3 +66,7 @@ git push origin --delete _________2.
 
 For this problem ------>>   fatal: detected dubious ownership in repository at 'D:/Coding/Python'
 Solution -------------->>   git config --global --add safe.directory D:/Coding/Python
+
+
+# Default file post size for Git has been exceeded.
+-> git config http.postBuffer 524288000
